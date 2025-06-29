@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogesh Ghritlahare - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2D46B9;
+      --secondary: #FF6F61;
+      --accent: #FFB400;
+      --background: #F4F6F8;
+      --text: #333;
+      --white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      padding: 2.5rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p, header a {
+      font-size: 1rem;
+      color: var(--white);
+    }
+
+    nav {
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--white);
+    }
+
+    .toolbar {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 1000;
+    }
+
+    .toolbar button, .toolbar a {
+      margin: 0 5px;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      border: none;
+      color: var(--text);
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1.2rem;
+      font-size: 2rem;
+      border-left: 5px solid var(--secondary);
+      padding-left: 15px;
+    }
+
+    .card, .project-card {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1.5rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    form button {
+      background: var(--primary);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: var(--secondary);
+    }
+
+    footer {
+      background: var(--primary);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="resume.pdf" download>📄 Resume</a>
+  </div>
+
+  <header>
+    <h1>Yogesh Ghritlahare</h1>
+    <p>Raipur, Chhattisgarh | +91-9754571228 | <a href="mailto:yogeshgr98@gmail.com">yogeshgr98@gmail.com</a> | <a href="https://linkedin.com/in/yogesh-ghritlahare" target="_blank">LinkedIn</a></p>
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="summary">
+      <h2>Profile Summary</h2>
+      <div class="card">
+        <p>Experienced in designing scalable AWS cloud solutions (EC2, Lambda, S3) and building robust data pipelines (ETL, Spark, SQL). Proficient in infrastructure automation (Amazon CI/CD) and data warehousing (Amazon Redshift, Databricks). Strong analytical skills with expertise in Python, SQL and BI tools (Power BI). Passionate about optimizing performance, cost, and reliability across cloud and data ecosystems.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Cloud Services:</strong> EC2, Lambda, S3, RDS, IAM, KMS, CloudFormation, VPC, SNS, SQS, Step Functions, DynamoDB, Athena, Glue, CloudWatch, CloudTrail, Kinesis, AWS Config</li>
+          <li><strong>Data Engineering:</strong> AWS Glue, AWS Data Pipeline, Databricks, Apache Spark, ETL, SQL</li>
+          <li><strong>Data Analytics:</strong> Amazon QuickSight, Amazon Athena, Redshift Spectrum, PowerBI, Excel</li>
+          <li><strong>Programming:</strong> Python, SQL</li>
+          <li><strong>Databases:</strong> RDS (MySQL, PostgreSQL), DynamoDB, Amazon Aurora</li>
+          <li><strong>Tools & DevOps:</strong> AWS CLI, CodePipeline, CodeBuild, CodeDeploy, VS Code, CI/CD, ServiceNow, Confluence</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <div class="card">
+        <h3>Enterprise Technology Engineer – Infosys (Aug 2023 – Present)</h3>
+        <ul>
+          <li>Handled ELT from SAP to AWS, Azure Data Lake and Hub.</li>
+          <li>Enabled efficient data pipelines, transformation, and analytics.</li>
+        </ul>
+        <h3>Senior System Engineer – Infosys (Jan 2023 – Jul 2023)</h3>
+        <ul>
+          <li>Built ETL pipelines using Glue, Lambda, Redshift, and S3.</li>
+        </ul>
+        <h3>System Engineer – Infosys (May 2022 – Jan 2023)</h3>
+        <ul>
+          <li>Created Power BI dashboards and automated reports using Python and SQL.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <p><strong>Bachelor of Technology in Computer Science and Engineering</strong><br>Government Engineering College, Bilaspur (2017–2021) – <strong>76.34%</strong></p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Registration Block Generator</h3>
+          <p>Tool to automate YAML block generation for registrations.</p>
+        </div>
+        <div class="project-card">
+          <h3>Serverless Data Processing</h3>
+          <p>Automated image/file handling via AWS Lambda, S3, and SNS.</p>
+        </div>
+        <div class="project-card">
+          <h3>Event-Driven ETL Pipeline</h3>
+          <p>Built with Lambda, Glue, Redshift for real-time analytics.</p>
+        </div>
+        <div class="project-card">
+          <h3>CI/CD Pipeline</h3>
+          <p>GitHub Actions + AWS CodeBuild + CodeDeploy to EC2.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="card">
+        <ul>
+          <li>AWS Certified Solutions Architect – Associate</li>
+          <li>AWS Certified Cloud Practitioner</li>
+          <li>Databricks Certified Data Engineer Associate</li>
+          <li>Microsoft Certified: Azure Data Fundamentals (DP-900)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="card">
+        <form action="mailto:yogeshgr98@gmail.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Yogesh Ghritlahare | Designed with ❤️ using HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('section').forEach(sec => sec.classList.add('visible'));
+  </script>
+</body>
+</html>
